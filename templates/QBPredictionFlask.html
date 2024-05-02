@@ -131,6 +131,45 @@
     .actual {
         background-color: blue;
     }
+
+    @media screen and (max-width: 767px) {
+            /* Adjustments for smaller screens */
+            #chartContainer,
+            #panelContainer,
+            #plotContainer,
+            .key {
+                width: 100%;
+                float: none;
+            }
+
+            .key {
+                position: static;
+                margin-top: 10px;
+                padding: 0;
+                text-align: center;
+            }
+
+            .key-item {
+                display: inline-block;
+                margin: 0 5px;
+            }
+
+            .popup-content {
+                width: 90%;
+            }
+
+            /* Adjust font sizes */
+            p,
+            .panel-title {
+                font-size: 14px;
+            }
+
+            /* Hide less important content */
+            #panelContainer,
+            #popupContainer {
+                display: none;
+            }
+        }
     </style>
    
 
