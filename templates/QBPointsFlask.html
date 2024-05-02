@@ -105,6 +105,33 @@
     align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+    /* Reduce container widths */
+    #chartContainer {
+        width: 100%;
+    }
+
+    #panelContainer {
+        width: 100%;
+    }
+
+    /* Stack elements vertically */
+    #chartContainer,
+    #panelContainer {
+        float: none;
+    }
+
+    /* Adjust font sizes */
+    p {
+        font-size: 16px;
+    }
+
+    /* Hide less important content */
+    #popupContainer {
+        display: none;
+    }
+}
+
     </style>
    
 
